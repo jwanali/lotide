@@ -20,27 +20,30 @@ const assertArraysEqual= function (array1,array2) {
     console.log(`\u26D4 Assertion Failed: ${array1} !== ${array2}`);
   }
 };
+ 
 
 const middle = function (array) {
-  let result = [];
+  let middle = [];
   if (array.length === 0 || array.length === 1) {
     return []
   } else {
     if (array.length % 2 === 0) {
-      result[0] = array[(array.length / 2) - 1];
-      result[1] = array[array.length / 2];
+      middle[0] = array[(array.length / 2) - 1];
+      middle[1] = array[array.length / 2];
 
     } else {
-      result[0] = array[(array.length - 1) / 2]
+      middle[0] = array[(array.length - 1) / 2]
     }
   }
 
-  return result;
+  return middle;
 };
-console.log(middle([1, 2, 3, 4, 5]));
-console.log(middle([1, 2, 3, 7, 5, 6]));
+
+
+console.log(middle([1, 2, 3, 'h',7, 5, 6]));
 console.log(middle([1, 2, 3, 4, 5, 6]));
 console.log(middle([1, 2, 5, 6]));
-console.log(assertArraysEqual(middle([1,2,3,4,5]),[3]));
-console.log(assertArraysEqual(middle([1,2,3,4,5,6,7,8,9,10]),[5,6,7]));
-console.log(assertArraysEqual(middle([1,2,3,4,5,6,7]),[4]));
+assertArraysEqual(middle([1,2,3,4,5]),[3]);
+assertArraysEqual(middle([1,2,3,4,5,6,7,8,9,10]),[5,6,7]);
+assertArraysEqual(middle([1,2,3,4,5,6,7]),[4]);
+assertArraysEqual(middle([1,2,3,4,5]),[3]);
