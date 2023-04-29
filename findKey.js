@@ -5,17 +5,15 @@ const assertEqual = function(actual, expected) {
     console.log(`\u26D4 Assertion Failed: ${actual} !== ${expected}`);
   }
 };
-
 const findKey = function(object,callback) {
+
   const keys =  Object.keys(object);
   for (let key of keys) {
-   if (callback(object[key])) {
+    if (callback(object[key])) {
     return key;
    }
   }
 }
-
-
 const data1 = {
   "Blue Hill": { stars: 1 },
   "Akaleri":   { stars: 3 },
@@ -24,12 +22,6 @@ const data1 = {
   "Ora":       { stars: 2 },
   "Akelarre":  { stars: 3 }
 }
-
-
-
-
-
-
 assertEqual(findKey(data1, x => x.stars === 1), 'Blue Hill');
 assertEqual(findKey(data1, x => x.stars === 3), 'Akaleri');
 assertEqual(findKey(data1, x => x.stars === 2), 'noma');
