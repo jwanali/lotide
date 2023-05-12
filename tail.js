@@ -16,6 +16,7 @@ const tail = function(array) {
   }
   return newArray;
 };
+console.log(JSON.stringify([2,3,'Hello']))
   /*
 
 console.log(assertEqual(JSON.stringify(tail([1,2,3,5])),JSON.stringify([2,3,5])));
