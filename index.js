@@ -15,6 +15,27 @@ const letterPositions = require('./letterPositions');
 const map = require('./map');
 const takeUntil = require('./takeUntil');
 const without = require('./without');
+
+module.exports = {
+  head,
+  tail,
+  middle,
+  assertObjectsEqual,
+  assertEqual,
+  assertArraysEqual,
+  countLetters,
+  countOnly,
+  eqArrays,
+  eqObjects,
+  findKey,
+  findKeyByValue,
+  flatten,
+  letterPositions,
+  takeUntil,
+  map,
+  without,
+};
+/*
 module.exports = {
   head:               head,
   tail:               tail,
@@ -34,3 +55,4 @@ module.exports = {
   map:                map,
   without:            without,
 };
+*/
