@@ -60,3 +60,4 @@ assertArraysEqual(["lighthouse"],words)
 without([1, 2, 3], [1]); // => [2, 3]
 without(["1", "c", "3"], [1, 2, "c"]); // => ["1", "2"]
 without(["1", "2", "b"], [1, 2, "3"]);
+module.exports = without;

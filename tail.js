@@ -1,11 +1,11 @@
-const assertEqual = function(actual, expected) {
+/*const assertEqual = function(actual, expected) {
   if (actual === expected) {
     console.log(`\u2705 Assertion Passed: ${actual} === ${expected}`);
   } else {
     console.log(`\u26D4 Assertion Failed: ${actual} !== ${expected}`);
   }
 
-};
+};*/
 const tail = function(array) {
   let newArray = [];
   for (let i = 0; i < array.length - 1; i++) {
@@ -16,7 +16,7 @@ const tail = function(array) {
   }
   return newArray;
 };
-console.log(JSON.stringify([2,3,'Hello']))
+//console.log(JSON.stringify([2,3,'Hello']))
   /*
 
 console.log(assertEqual(JSON.stringify(tail([1,2,3,5])),JSON.stringify([2,3,5])));

@@ -58,3 +58,4 @@ assertArraysEqual(takeUntil(data2,x => x === ','),[ "I've", 'been', 'to', 'Holly
 assertArraysEqual(takeUntil(data1,x => x < 0),[ 1, 2, 5, 7, 2 ]);
 assertArraysEqual(takeUntil(words,word => word === 'to'), ["ground", "control"]);
 assertArraysEqual(takeUntil(numbers,num => num === 5),[1,2,3,4]);
+module.exports = takeUntil;

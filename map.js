@@ -41,3 +41,5 @@ assertArraysEqual(map(numbers, (number) => number * 2),[2,4,6,8,10,12,14,16,18,2
 const person = [{name: 'Rick',age: 53},{name: 'Ron', age: 66 },{name: 'Lio', age: 16},{name: 'Sara', age :27}];
 
 assertArraysEqual(map(person, person => person.name), ['Rick','Ron','Lio','Sara']);
+
+module.exports = map;

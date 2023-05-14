@@ -36,3 +36,4 @@ assertEqual(findKey(data1, x => x.stars === 2), 'noma');
 
 
 assertEqual(findKey(data1,helper),'Blue Hill');
+module.exports = findKey;
