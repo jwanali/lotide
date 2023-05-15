@@ -31,7 +31,7 @@ const helper =  function (object){
 assertEqual(findKey(data1, x => x.stars === 1), 'Blue Hill');
 assertEqual(findKey(data1, x => x.stars === 3), 'Akaleri');
 assertEqual(findKey(data1, x => x.stars === 2), 'noma');
-assertEqual(findKey(data1, x => x.stars === 2), 'noma');
+
 
 
 

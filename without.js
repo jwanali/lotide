@@ -48,7 +48,7 @@ const without = function(source,itemsToRemove) {
 
 
 const words = ["hello", "world", "lighthouse"];
-const newResult =without(words, ["lighthouse"]);
+const newResult = without(words, ["lighthouse"]);
 console.log(words);
 console.log(newResult);
 without(words, ["lighthouse"]); // no need to capture return value for this test case

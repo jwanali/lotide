@@ -44,6 +44,7 @@ const letterPositions = function(sentence) {
     }
   }
   console.log(result);
+  
   return result;
  
 };

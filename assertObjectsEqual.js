@@ -40,9 +40,8 @@ const eqObjects = function (object1, object2) {
 };
 
 
-// FUNCTION IMPLEMENTATION
+
 const assertObjectsEqual = function (actual, expected) {
-  // Implement me!
   const inspect = require('util').inspect; // <= add this line
   console.log(`Example label: ${inspect(actual)}`);
   if (eqObjects(actual, expected)) {
@@ -52,12 +51,6 @@ const assertObjectsEqual = function (actual, expected) {
   }
 
 };
-/*
-const longSleeveMultiColorShirtObject = { size: "medium", colors: ["red", "blue"], sleeveLength: "long" };
-const multiColorShirtObject = { colors: ["red", "blue"], size: "medium" };
-const anotherMultiColorShirtObject = { size: "medium", colors: ["red", "blue"] };
-assertObjectsEqual(multiColorShirtObject, anotherMultiColorShirtObject);
-assertObjectsEqual(multiColorShirtObject, longSleeveMultiColorShirtObject);
-*/
+
 
 module.exports = assertObjectsEqual;
