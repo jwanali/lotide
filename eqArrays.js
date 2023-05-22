@@ -1,6 +1,4 @@
-
 const eqArrays = function(firstArray,secondArray) {
-  
   if (firstArray.length !== secondArray.length) {
     return false;
   }
@@ -11,6 +9,5 @@ const eqArrays = function(firstArray,secondArray) {
   }
   return true;
 }
-
 
 module.exports = eqArrays;

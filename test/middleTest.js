@@ -1,8 +1,5 @@
-
 const assert = require('chai').assert;
 const middle = require('../middle');
-const tail   = require('../middle');
-
 describe("#middle", () => {
   it("returns 3 for [1, 2, 3, 4, 5]", () => {
     assert.deepEqual(JSON.stringify(middle([1, 2, 3, 4, 5])),JSON.stringify([3]));

@@ -1,4 +1,3 @@
-
 const countLetters = function(sentence) {
   const result = {};
   for (const iterator of sentence) {
@@ -12,8 +11,6 @@ const countLetters = function(sentence) {
   }
   console.log(result);
   return result;
-
 };
-
 
 module.exports = countLetters;

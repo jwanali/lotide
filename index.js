@@ -35,24 +35,3 @@ module.exports = {
   map,
   without,
 };
-/*
-module.exports = {
-  head:               head,
-  tail:               tail,
-  middle:             middle,
-  assertObjectsEqual: assertObjectsEqual,
-  assertEqual:        assertEqual,
-  assertArraysEqual:  assertArraysEqual,
-  countLetters:       countLetters,
-  countOnly:          countOnly,
-  eqArrays:           eqArrays,
-  eqObjects:          eqObjects,
-  findKey:            findKey,
-  findKeyByValue:     findKeyByValue,
-  flatten:            flatten,
-  letterPositions:    letterPositions,
-  takeUntil:          takeUntil,
-  map:                map,
-  without:            without,
-};
-*/
